@@ -5,11 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KimJinWoo</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/darkMode.js"></script>
+    <script src="./js/Dday.js"></script>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav class="inner">
+            <h1><a href="#">JINWOO</a></h1>
+            <ul class="gnbMenu">
+                <li><a href="#">INTRO</a></li>
+                <li><a href="#">PROJECT</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li class="radio-box">
+                    <div class="icon"></div>
+                    <label>
+                        <input type="radio" name="radio" value="off" checked="checked">
+                    </label>
+                    <label>
+                        <input type="radio" name="radio" value="on">
+                    </label> 
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div id="wrap">
-        <section>Hello World</section>
+        <section id="MainSct1">
+            <!-- <h2>IM CREATING  MY<br>HISTORY  IN  A<br>PRESENTATION</h2> -->
+            <div class="load">
+                <hr/><hr/><hr/><hr/>
+              </div>
+            <div class="sec7-text-box">
+                <p>오픈날짜</p>
+                <p class="runTimeCon">2022년 12월 10일 PM 9시</p>
+                <hr/ style="opacity: 0;">
+                <p class="time-title">오픈까지 남은 시간</p>
+                <div class="time">
+                  <span id="d-day-hour">00</span>
+                  <span class="col">:</span>
+                  <span id="d-day-min">00</span>
+                  <span class="col">:</span>
+                  <span id="d-day-sec">00</span>
+                </div>
+              </div>
+        </section>
         <section></section>
     </div>
     <footer></footer>
