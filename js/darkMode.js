@@ -7,6 +7,7 @@ $(document).ready(function(){
          $('.inner').addClass('active');
          $('a').addClass('active');
          $('#MainSct1').addClass('active');
+         $('hr').addClass('active');
          $('body').css({
              background : 'white',
              transition: 'all 1s'
@@ -17,6 +18,7 @@ $(document).ready(function(){
          $('.inner').removeClass('active');
          $('a').removeClass('active');
          $('#MainSct1').removeClass('active');
+         $('hr').removeClass('active');
          $('body').css('background','black');
          console.log('noclick');
      }
