@@ -5,55 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KimJinWoo</title>
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/open.css" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./js/darkMode.js"></script>
     <script src="./js/Dday.js"></script>
+    <script src="./js/jquery-3.6.2.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/path/to/jquery.easy-pie-chart.js"></script>
+
 </head>
 <body>
     <header>
         <nav class="inner">
-            <h1><a href="#">JINWOO</a></h1>
-            <ul class="gnbMenu">
-                <li><a href="#">INTRO</a></li>
-                <li><a href="#">PROJECT</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li class="radio-box">
-                    <div class="icon"></div>
-                    <label>
-                        <input type="radio" name="radio" value="off" checked="checked">
-                    </label>
-                    <label>
-                        <input type="radio" name="radio" value="on">
-                    </label> 
-                </li>
-            </ul>
+            <div class="headerJG">
+                <h1><a href="#">JINWOO</a></h1> 
+                <ul class="gnbMenu">
+                    <li><a href="#top">INTRO</a></li>
+                    <li><a href="#sct2">PROJECT</a></li>
+                    <li><a href="#Menutable">ABOUT</a></li>
+                </ul>
+            </div>
+            
         </nav>
     </header>
     <div id="wrap">
-        <section id="MainSct1">
-            <!-- <h2>IM CREATING  MY<br>HISTORY  IN  A<br>PRESENTATION</h2> -->
-            <div class="load">
-                <hr/><hr/><hr/><hr/>
-              </div>
-            <div class="sec7-text-box">
-                <p>오픈날짜</p>
-                <p class="runTimeCon">2022년 12월 10일 PM 9시</p>
-                <hr/ style="opacity: 0;">
-                <p class="time-title">오픈까지 남은 시간</p>
-                <div class="time">
-                  <span id="d-day-hour">00</span>
-                  <span class="col">:</span>
-                  <span id="d-day-min">00</span>
-                  <span class="col">:</span>
-                  <span id="d-day-sec">00</span>
-                </div>
-              </div>
+        <section id="MainSct1" class="content">
+            <h2 id="MainTitle">IM CREATING  MY<br>HISTORY  IN  A<br>PRESENTATION</h2>
         </section>
-        <section></section>
+        <section id="sct2" class="content">
+            <nav class="inner">
+                <div class="contentBox">
+                <img src="./img/prjt1.PNG">
+                    <!-- <div style="width: 1070px; height: 550px; background-color: white;"></div> -->
+                    <ul>
+                        <li><a>프로젝트 명 : <span>Fitnny</span></a></li>
+                        <li><a>헬스장에 가기 힘든 현대 사회인과 직접적인 대면이 부담 스러운 사람들이 즐겁게 운동할 수 있는
+                        메타버스 헬스 케어 서비스</a></li>
+                        <li>
+                            <div><a href="https://jinjindal.github.io/fitnny/">사이트</a></div>
+                            <div><a href="https://github.com/JinJinDal/fitnny">깃허브</a></div>
+                            <div><a href="/fitnny.html">설명</a></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contentBox">
+                    <img src="./img/prjt3.PNG">
+                        <!-- <div style="width: 1070px; height: 550px; background-color: white;"></div> -->
+                        <ul>
+                            <li><a>프로젝트 명 : <span>안농하농</span></a></li>
+                            <li><a>지친 일상에 힐링이 필요한 2030세대의 러스틱라이프를 제공하는 농촌의 삶 체험 서비스</a></li>
+                            <li>
+                                <div><a href="#">Website</a></div>
+                                <div><a href="#">GitHub</a></div>
+                                <div><a href="#">Figma</a></div>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+            
+        </section>
+        <section id="Menutable" class="content">
+            <nav class="inner">
+                <div class="accordion-box">
+                    <ul>
+                        <li>
+                            <div class="quest"><span>ABOUT ME</span></div>
+                            <div class="answer">
+                                <span class="aboutBox">
+                                    <img src="./img/my1.png">
+                                    <span>
+                                        <p>운동부 출신의 끈기와 새로운 것에 도전 할 줄<br> 아는 용기를 가지고있는 한 남자</p>
+                                        <p>곰 같은 이미지로 주변 사람들에게 푸근한<br> 느낌을 선사해주는 남자</p>
+                                        <p>힘들어도 주변을 탓하는 것이 아닌 공감하며<br> 다 같이 해결하려고 노력하는 남자</p>
+                                    </span>
+                                    
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="quest"><span>SKILL</span></div>
+                            <div class="answer">
+                                <span class="grapBox">
+                                    <!-- <div class="circle"><p>기본적인 코드를 꾸준히 사용하여 빠르고 정확하게 사용 할 수 있습니다.</p></div> -->
+                                    <div class="pie-chart pie-chart1"><span class="center"><p>기본적인 코드를 꾸준히 사용하여 빠르고 정확하게 사용할 수 있는 사람</p></span></div>
+                                    <p>웹 표준을 준수하며 접근성 좋은 반응형 레이아웃을 제작하도록 노력한다.</p>
+                                </span>
+                                <ul class="answerMenu">
+                                    <li>HTML/CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Design Tool</li>
+                                    <li>Video Edit</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="quest"><span>CONTACT</span></div>
+                            <div class="answer">
+                                <span id="contactBundle">
+                                    <span id="contactBox">
+                                        <ul>
+                                            <li>Instagram</li>
+                                            <li>FaceBook</li>
+                                            <li><a href="https://github.com/JinJinDal/fitnny">GitHub</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><h2><span class="gold">K</span>IM <span class="gold">J</span>IN <span class="gold">W</span>OO</h2></li>
+                                            <li>E-mail : <a target="_blank" href="mailto:krlawls1@gmail.com">Krlawls1@gmail.com</a></li>
+                                            <li>TP : <a href="tell:010-4540-6254">010-4540-6254</a></li>
+                                            <li>Address : Chungnam Seosan</li>
+                                        </ul>
+                                    </span>
+                                    <img src="./img/my2.png">
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </section>
     </div>
     <footer></footer>
+    <script src="./js/scroll.js"></script>
 </body>
 </html>

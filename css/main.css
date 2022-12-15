@@ -8,23 +8,38 @@ a{
 }
 .inner{
     margin: 0 66px;
-    border-bottom: 3px solid white;
+}
+header .inner{
+   border-bottom: 3px solid white;
+}
+header .inner div:nth-child(1){
+   display: flex;
+   justify-content: space-between;
 }
 .inner.active{
     border-bottom: 3px solid black;
 }
+header {
+   /* position: fixed; */
+}
 header nav{
-    display: flex;
-    justify-content: space-between;
-    font-size: 26px;
-    padding: 55px 0;
-    border-radius: 1px solid white;
+   /* position: fixed; */
+   width: auto;
+   font-size: 26px;
+   padding: 20px 0;
+   border-radius: 1px solid white;
+}
+header nav h1{
+   /* padding-right: 1350px; */
+}
+header nav h1 a{
+   font-weight: bold;
 }
 header nav a.active{
     color: black;
 }
 header nav .gnbMenu{
-    
+    float: right;
 }
 header nav .gnbMenu li{
     float: left;
@@ -85,57 +100,188 @@ header nav .gnbMenu li{
  /* ================ Section1 ================ */
  /* ================ Section1 ================ */
 
- /* #MainSct1{
+ #MainSct1{
     text-align: center;
     color: white;
     font-size: 90px;
     font-weight: bold;
- } */
-
- /* D-day Count */
- .sec7-text-box{
-   padding-top: 300px;
- }
- #MainSct1{
-   text-align: center;
-   color: white;
-   font-size: 50px;
-   font-weight: bold;
-}
-#MainSct1.active{
-   color: black;
-}
-.load{position:absolute;top:28%;left:50%;transform:translate(-50%, -50%);
-   /*change these sizes to fit into your project*/
-   width:100px;
-   height:100px;
- }
- .load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
- 
- .load :first-child{background:white;animation-delay:-1.5s}
- .load :nth-child(2){background:white;animation-delay:-1s}
- .load :nth-child(3){background:white;animation-delay:-0.5s}
- .load :last-child{background:#E3CBA7;}
- .load hr.active{background: black;}
- 
- @keyframes spin{
-   0%,100%{transform:translate(0)}
-   25%{transform:translate(160%)}
-   50%{transform:translate(160%, 160%)}
-   75%{transform:translate(0, 160%)}
- }
-/* D-day Count */
-
- #MainSct1 h2{
-    position: fixed;
-    top: 50%;
-    bottom: 50%;
-    left: 50%;
-    right: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     line-height: 150%;
+    padding-top: 200px;
+    height: 1000px;
  }
+ #MainSct1 h2{
+   position: fixed;
+   z-index: -1;
+   left: 30%;
+   top: 30%;
+ }
+  /* ================ Section2 ================ */
+ /* ================ Section2 ================ */
+ /* ================ Section2 ================ */ 
+.contentBox{
+   display: flex;
+   font-size: 35px;
+   justify-content: space-between;
+   align-items: center;
+   gap: 80px;
+}
+.contentBox img{
+   width: 1070px; 
+   height: 550px;
+}
+.contentBox ul{
+   width: 672px;
+   /* height: 413px; */
+   z-index: 2;
+}
+.contentBox ul li:last-child{
+   display: flex;
+   justify-content: space-between;
+}
+.contentBox ul li:last-child div{
+   border: 1px solid white;
+   border-radius: 90px;
+   padding: 5px 25px;
+}
+.contentBox ul li{
+   padding-bottom: 40px;
+}
+
  
+
+ /* ================ Section3 ================ */
+ /* ================ Section3 ================ */
+ /* ================ Section3 ================ */
+#Menutable ul {
+   list-style:none;
+}
+#Menutable li{
+   /* text-align: center; */
+}
+#Menutable .quest{
+   text-align: center; 
+}
+#Menutable .quest span{
+   font-size: 90px;
+   color: white;
+}
+#Menutable .accordion-box{
+   padding: 0 60px;
+   margin: 0 auto;
+}
+#Menutable .accordion-box li:nth-child(1) p{
+   font-size: 40px;
+   padding-bottom: 37px;
+}
+#Menutable .accordion-box li div {
+   padding:30px;
+   border-bottom:1px solid white;
+   border-top:1px solid white;
+}
+#Menutable .accordion-box li .answer {
+   display: none;
+   background: black;
+   color: white;
+   padding: 100px 0;
+}
+#Menutable .accordion-box li .answer:nth-child(3){
+   display: flex;
+}
+#Menutable .accordion-box li .answer .aboutBox{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+#Menutable .accordion-box li .answer .grapBox{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+#Menutable .accordion-box li .answer .grapBox p:nth-child(2){
+   font-size: 40px;
+   width: 505px;
+}
+#Menutable .accordion-box li .answer .circle{
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   line-height: 1.5;
+}
+#Menutable .accordion-box li .answer .circle p{
+   width: 277px;
+}
+#Menutable .accordion-box li .answer.active {
+   display:block;
+}
+#Menutable .accordion-box li .answerMenu{
+   font-size: 26px;
+   font-weight: 700;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 100px;
+}
+#Menutable .accordion-box li .answerMenu li{
+   float: left;
+   display: inline;
+}
+#Menutable .accordion-box li .answerMenu li:hover{
+   background-color: white;
+   width: 10%;
+   height: 45px;
+   color: black;
+   text-align: center;
+}
+#contactBundle{
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-around;
+}
+.gold{
+   color: #E6CEA9;
+}
+#contactBox{
+   display: flex;
+   width: 590px;
+   height: 180px;
+   justify-content: space-between;
+   font-size: 23px;
+   align-items: flex-end;
+   padding-bottom: 70px;
+}
+#contactBox h2{
+   font-size: 60px;
+   padding-bottom: 100px;
+}
+#contactBox ul:nth-child(2){
+   padding: 0 0 0 50px;
+}
+#contactBox li{
+   padding: 15px 0;
+}
  
+
+.pie-chart {
+   position: relative;
+   display:inline-block;
+   width: 400px;
+   height: 400px;
+   border-radius: 50%;
+   transition: 0.3s;
+ }
+ span.center{
+   background: black;
+   display : block;
+   position: absolute;
+   top:50%; left:50%;
+   width:410px; height:410px;
+   border-radius: 50%;
+   text-align:center; 
+   line-height: 1.5;
+   font-size:30px;
+    transform: translate(-50%, -50%);
+ }
+ span.center p{
+   padding-top: 150px;
+ }
